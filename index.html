@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sivusto antaa siivousvinkkejä kotitalouksile">
     <title>Kiiltomaa</title>
+    <link rel="icon" type="image/png" href="media/logomusta.png">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--GOOGLE FONT-->
+    <!--Tenor Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!--Pontano Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--HEADER-NAVIGAATIO-->
@@ -22,7 +33,6 @@
 
         <!--sivuston logo keskelle-->
          <a href="index.html" class="site-title">
-            <img src="" alt="" class="site-logo">
             Kiiltomaa
          </a>
 
@@ -36,7 +46,7 @@
     <main>
         <!--HERO-->
         <section class="hero">
-            <img src="">
+            <img src="media/siistikoti.jpg" alt="Kuva siististä kodista" class="hero-image">
             <h1 class="hero-text">Tervetuloa siivoamaan!</h1>
         </section>
 
@@ -52,23 +62,71 @@
             <div>
                 <h2>Tässä on TOP 5 suosikkimme joka kotiin. Näillä tuotteilla pärjäät sekä arjessa että juhlassa siivouskohteesta riippumatta.</h2>
             </div>
-        <p><a link href="https://www.prisma.fi/tuotteet/100009600/dr-beckmann-500ml-sappisaippua-tahranpoistoon-100009600">DR Beckmann: nestemäinen sappisaippua tahranpoistoon</a></p>
-        <p><a link href="https://www.prisma.fi/tuotteet/100014402/fairy-900ml-original-astianpesuaine-100014402">Fairy: Original astianpesuaine</a></p>
-        <p><a link href="https://www.s-kaupat.fi/tuote/sini-vaihtopaasetti/6423800395567">Sini: Tiskiharja ja vaihtopää</a></p>
-        <p><a link href="https://www.prisma.fi/tuotteet/100006083/universal-stone-650g-savisaippua-100006083">Universal Stone: Savisaippua</a></p>
-        <p><a link href="https://www.s-kaupat.fi/tuote/klorin-original-valkaisu-ja-desinfiointiaine-750-ml/5700101311108">Klorin: Original valkaisu- ja desinfiointiaine</a></p>
-
-        <p></p>
+            <div class="top5linkit">
+                <p><a link href="https://www.prisma.fi/tuotteet/100009600/dr-beckmann-500ml-sappisaippua-tahranpoistoon-100009600">DR Beckmann: nestemäinen sappisaippua tahranpoistoon</a></p>
+                <p><a link href="https://www.prisma.fi/tuotteet/100014402/fairy-900ml-original-astianpesuaine-100014402">Fairy: Original astianpesuaine</a></p>
+                <p><a link href="https://www.s-kaupat.fi/tuote/sini-vaihtopaasetti/6423800395567">Sini: Tiskiharja ja vaihtopää</a></p>
+                <p><a link href="https://www.prisma.fi/tuotteet/100006083/universal-stone-650g-savisaippua-100006083">Universal Stone: Savisaippua</a></p>
+                <p><a link href="https://www.s-kaupat.fi/tuote/klorin-original-valkaisu-ja-desinfiointiaine-750-ml/5700101311108">Klorin: Original valkaisu- ja desinfiointiaine</a></p>
+            </div>
         </section>
 
         <!--UKK SIIVOUSVINKIT-->
         <section class="vinkkiosio">
-            <div class="vinkit">
-                <h2>UKSK - Usein kysytyt siivouskysymykset</h2>
+            <div class="vinkkicontainer">
+                <h2 class="vinkkiotsikko">UKSK - Usein kysytyt siivouskysymykset</h2>
+                <div class="articles">
+                    <!--Viinitahran poisto-->
+                    <article class="cards">
+                        <img src="media/viini.jpg" alt="Kaatunut viinilasi ja punaviinitahra">
+                        <h3>Apua! Kuinka poistaa viinitahra?</h3>
+                        <p>Punaviinitahran poistossa tärkeintä on nopea reagointi.</p>
 
+                        <h4>Vaiheet</h4>
+                        <ol>
+                            <li>Imeytä viini paperilla</li>
+                            <li>Tapottele varovasti, älä hankaa.</li>
+                            <li>Ripottele suolaa tai ruokasoodaa tahralle ja anna sen imeytyä.</li>
+                            <li>Huuhtele runsaalla kylmällä vedellä.</li>
+                        </ol>
+                        <p class="lisavinkit">Vinkki: Jos kyseessä on sohva tai matto, kokeile partavaahtoa tahralle. Anna vaikuttaa hetken ja huuhtele lopuksi kylmällä vedellä.</p>
+                        <p class="lisavinkit">Vinkki: Vanhaan tahraan voi kokeilla ruokasoodatahnaa. Lisää ruokasoodaan hieman vettä, kunnes koostumus on tahnamainen. Levitä tahna tahralle, anna vaikuttaa ja huuhtele kylmällä vedellä.</p>
+                    </article>
+
+                    <!--Valkoisten kenkien puhdistus-->
+                    <article class="cards">
+                        <img src="media/valkoisetkengat.jpg" alt="Valkoiset kengät">
+                        <h3>Kuinka puhdistan valkoiset kengät?</h3>
+                        <p>Valkoiset kengät menettävät nopeasti raikkaan ilmeensä, mutta ne voidaan entisöidä kotikonstein.</p>
+                        <h4>Vaiheet</h4>
+                        <ol>
+                            <li>Poista irtolika kopistelemalla kenkiä ja harjaamalla ne.</li>
+                            <li>Levitä hammastahnaa tai ruokasoodatahnaa likaisiin kohtiin.</li>
+                            <li>Harjaa kevyesti.</li>
+                            <li>Pyyhi kostealla liinalla.</li>
+                            <li>Anna kuivua ilmavasti.</li>
+                        </ol>
+                        <p class="lisavinkit">Vinkki: Jotta kengät pysyy muodossaan, käytä erikseen tähän tarkoitettua välinettä tai laita kengän sisälle runsas määrä sanomalehtiä.</p>
+                        <p class="lisavinkit">Vinkki: Nahkakengille käytä mietoa saippualiuosta ruokasoodatahnan tilalla. Sappisaippua on tähän erinomainen valinta!</p>
+                    </article>
+
+                    <!--Roskakorin raikastaminen-->
+                    <article class="cards">
+                        <img src="media/roskis.png" alt="Keittiön roskakori">
+                        <h3>Kuinka pääsen eroon hajuista roskakaapissa?</h3>
+                        <p>Roskis voi alkaa haista nopeasti, mutta pienillä kotikonsteilla sen saa pysymään raikkaana.</p>
+                        <h4>Vaiheet</h4>
+                        <ol>
+                            <li>Ripota ruokasoodaa roskiksen pohjalle. Se imee hajuja ja kosteutta.</li>
+                            <li>Pyyhi roskis etikkavedellä, myös ulkopuolelta. Se desinfioi ja poistaa hajuja.</li>
+                            <li>Kuivaa huolellisesti.</li>
+                            <li>Tiputtele vanulappuun tuoksua esimerkiksi huonetuoksusta, hajuvedestä tai eteerisestä öljystä ja aseta vanulappu roskiksen pohjalle. Näin saat hyvän tuoksun roskikseen.</li>
+                        </ol>
+                        <p class="lisavinkit">Vinkki: Voit myös käyttää sitruunaa tai sitruunan kuorta roskiksen raikastamiseen. Jos käytät sitruunan kuorta, muista vaihtaa se säännöllisesti.</p>
+                    </article>
+                </div>
             </div>
         </section>
-
     </main>
 
     <!--FOOTER-->
