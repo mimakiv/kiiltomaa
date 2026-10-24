@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sivusto antaa siivousvinkkejä kotitalouksile">
-    <title>Kiiltomaa</title>
+    <title>Kiiltomaa - Ota yhteyttä</title>
     <link rel="icon" type="image/png" href="media/logomusta.png">
     <link rel="stylesheet" href="css/style.css">
 
@@ -43,7 +43,86 @@
     </header>
 
     <main>
+    <section class="sisalto">
     <h1>Yhteydenottolomake</h1>
+    <p>Tähdellä (*) merkityt kentät ovat pakollisia</p>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Yhteystiedot</legend>
+            <div class="kentta">
+                <label for="nimi">Koko nimi<span class="pakollinen"> *</span></label>
+                <input type="text" id="nimi" name="kokonimi" placeholder="Etunimi Sukunimi" autocomplete="name" maxlength="100" required>
+            </div>
+            <div class="kentta">
+                <label for="sposti">Sähköposti<span class="pakollinen"> *</span></label>
+                <input type="email" id="sposti" name="sposti" placeholder="etunimi.sukunimi@domain.com" autocomplete="email" maxlength="100" required>
+            </div>
+            <div class="kentta">
+                <label for="puh">Puhelin</label>
+                <input type="tel" id="puh" name="puhl" placeholder="+35845123456" autocomplete="puh">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Yhteydenoton syy</legend>
+            <label for="aihe">Aihe<span class="pakollinen"> *</span></label>
+            <select name="aihe" id="aihe">
+                <option value="#">Valitse yhteydenoton syy</option>
+                <optgroup label="Yhteistyö">
+                <option value="yhteistyo">Yhteistyö: palvelut</option>
+                <option value="yhteistyotuote">Yhteistyö: tuotteet</option>
+                </optgroup>
+                <optgroup label=Tuotteet>
+                <option value="tuotevinkit">Tuotevinkit</option>
+                <option value="tuotepalaute">Tuotepalaute</option>
+                </optgroup>
+                <optgroup label="Siivoustyö">
+                <option value="siivoustyotarjous">Siivoustyön tarjouspyyntö</option>
+                <option value="siivoustyontilaus">Siivoustyön tilaus</option>
+                </optgroup>
+            </select>
+            </fieldset>
+            <fieldset>
+           
+            <legend>Viestikenttä</legend>
+            <div class="kentta">
+                <label for="viesti">Kirjoita lisätietoja</label>
+                <textarea name="viesti" id="viesti" rows="10" placeholder="Kirjoita viestisi"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Onko kyseessä yritys vai yksityishenkilö?</legend>
+            <div class="valinta">
+                <input type="radio" id="yritys" name="mikaoletvalinta" value="yritys" required>
+                <label for="yritys">Yritys</label>
+            </div>
+            <div class="valinta">
+                <input type="radio" id="yksityishenkilo" name="mikaoletvalinta" value="yksityishenkilo" required>
+                <label for="yksityishenkilo">Yksityishenkilö</label>
+            </div>
+        </fieldset>
+
+        <!-- <div class="kentta">
+                <label for="maara">Valitse neliöiden määrä</label>
+                <input type="number" id="maara" name="maara" min="1" max="10" required></label>
+            </div> 
+        -->
+            <div class="tappa">
+                <input type="checkbox" id="uutiskirje" name="uutiskirje" value="kylla">
+                <label for="uutiskirje">Haluan saada viikoittaiset siivousvinkit sähköpostitse</label>
+            </div>
+            <div class="tappa">
+                <input type="checkbox" id="ehdot" name="ehdot" value="hyvaksytty" required>
+                <label for="ehdot">Olen tutustunut ehtoihin *</label>
+            </div>
+            <div class="painikkeet">
+                <button type="submit">Lähetä</button>
+                <button type="reset" class="tyhjenna">Tyhjennä</button>
+            </div>
+    </form>
+    </section>
     </main>
 
     <!--FOOTER-->
