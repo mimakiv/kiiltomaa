@@ -52,7 +52,7 @@ h3 {
 
 h4 {
     font-family: "Tenor sans", sans-serif;
-    font-size: 1.rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -90,20 +90,18 @@ header {
 nav a {
     text-decoration: none;
     color: #F6F3EC;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin: 0px 10px;
 }
 
 nav a:hover, nav a:focus {
     text-decoration: underline;
     color: #574C3F;
-    font-size: 1.3rem;
 }
 
 nav a.active {
-    font-weight: áqws00;
+    font-weight: 500;
     color: #574C3F;
-    font-size: 1.3rem;
 }
 
 
@@ -206,7 +204,7 @@ nav a.active {
 
 .tuotekortti:hover p {
     color:#B9A590;
-    text-decoration: underline;
+    font-weight: 700;
 }
 
 
@@ -247,7 +245,7 @@ footer {
     top: 60%;
     left: 20px;
     color: #F6F3EC;
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 10px rgba(66, 63, 58, 0.5);
 }
 
@@ -258,58 +256,65 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #B9A590;
-    min-height: 10vh;
+    min-height: 20vh;
     height: auto;
-    padding: 0px 15px;
-    font-size: 1.2rem;
+    padding: 20px 15px;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
 /*TOP5 SUOSIKIT*/
 
 .top5 {
-    background-color: #574C3F;
-    color: #F6F3EC;
-    padding: 25px 15px 20px;
+    background-color: #F6F3EC;
+    color: #574C3F;
+    padding: 4rem 1.5rem;
+}
+
+.top5esittely {
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 
 .top5 h2 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 .top5esittely p {
-    color: #B9A590;
-    margin: 10px 15px 20px;
-    font-size: 22px;
-    font-style: italic;
-    
+    color: #36302A;
+    margin: 10px 5px 30px;
+    font-size: 1.3rem;
 }
 
 /*linkkiblokit*/
 .top5linkit {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
-    column-gap: 32px;
+    column-gap: 5vh;
 }
 
 .top5linkit p {
-    color: #F6F3EC;
+    color: #36302A;
 }
 
 .top5 a {
     text-decoration: none;
-    color: #F6F3EC;
+    color: #5a4f42;
 }
 
 .top5 a:hover {
-    text-decoration: underline;
     color: #B9A590;
+}
+
+.top5 a:hover h3 {
+    text-decoration: underline;
 }
 
 .top5linkkiblokki {
     display: block;
     text-decoration: none;
-    border-top: 1px solid #36302A;
+    border-top: 1px solid #B9A590;
+    padding: 10px 0 10px;
 }
 
 .top5tuote {
@@ -318,7 +323,7 @@ footer {
 }
 
 .top5tuoteinfo {
-    font-size: 0.90rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -331,7 +336,7 @@ footer {
 }
 
 .top5linkkiblokki:hover {
-    background-color: #3a332ab9;
+    background-color: #f0eae0;
 }
 
 @media (max-width: 650px) {
@@ -340,16 +345,88 @@ footer {
     }
 }
 
+/*TULOSSA PIAN*/
+
+.tulossapian {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.tulossapian-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-otsikko {
+    font-size: 2.5rem;
+    color: #F6F3EC;
+}
+
+.tulossapian-header p {
+    color: #574C3F;
+    line-height: 1.7;
+    margin: 0 10px;
+}
+
+/* Kortit */
+.tulossapian-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+
+/* Yksittäinen kortti */
+.tulossa-card {
+    background: #F6F3EC;
+    border: 1px solid #F6F3EC;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tulossa-card-content {
+    padding: 1.5rem;
+}
+
+/* Videon alue */
+.tulossa-video {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #F6F3EC;
+    overflow: hidden;
+}
+
+.tulossa-video video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Tulossa*/
+.tulossa-merkki {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #F6F3EC;
+    color: #574C3F;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+}
+
 
 /*UKK SIIVOUSINKIT*/
 
 .vinkkiosio {
     background-color: #B9A590;
+    padding: 4rem 1.5rem;
 }
 
 .vinkkicontainer {
-    color: #F6F3EC;
-    padding: 32px 24px;
+    color: #574C3F;
     width: 100%;
     box-sizing: border-box;
 }
@@ -371,15 +448,15 @@ footer {
 
 /*korttiasetukset*/
 .cards {
-    background-color: #423a30;
-    color: #F6F3EC;
+    background-color: #F6F3EC;
+    color: #574C3F;
     font-size: 18px;
-    min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding: 10px;
+    min-width: 0;
+    border: 1px solid #F6F3EC;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .cards img {
@@ -388,17 +465,18 @@ footer {
     aspect-ratio: 2 / 1;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px 15px 0 0;
 }
 
 .cards details {
+    padding: 16px;
     min-width: 0;
 }
 
 .cards h3 {
-    color:#B9A590;
+    color:#5a4f42;
     font-size: 1.4rem;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 /*korttien summaryn ja lue-lisää-osion asetukset*/
@@ -474,19 +552,19 @@ footer {
 }
 
 
-/*--------------------KYLPPÄRI--------------------*/
+/*--------------------KEITTIÖ & KYLPPÄRI--------------------*/
 
 /*VINKIT*/
-
-.kylpyhuone-vinkit {
+/*vinkit toistaiseksi samoilla asetuksilla, jos haluaa huonekohtaisiksi, tulee muuttaa myös luokkien nimet!*/
+.huone-vinkit {
     margin: 0 50px 30px 50px;
 }
 
-.kylpyhuone-vinkit h2 {
+.huone-vinkit h2 {
     margin: 30px 0px;
 }
 
-.kylpyhuone-vinkit h3 {
+.huone-vinkit h3 {
     margin: 10px 0px;
     font-weight: bold;
 }
@@ -543,6 +621,76 @@ footer {
     }
 }
 
+/*--------------------TARVIKKEET--------------------*/
+
+/*GALLERIAKORTIT*/
+.gallery-section {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    margin: 0;
+    background-color: #F6F3EC;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    box-shadow: 0 8px 18px rgba(58, 49, 37, 0.664);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.gallery-item figcaption {
+    padding: 1.2rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+/* Tabletti */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobiili */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+}
+
+
 /*--------------------OTA YHTEYTTÄ--------------------*/
 
 .sisalto {
@@ -552,7 +700,7 @@ footer {
 
 form {
     background-color: #F6F3EC;
-    margin-top: px;
+    margin-top: 1px;
     padding: 22px;
     border: 1px solid #36302A;
     border-radius: 4px;
